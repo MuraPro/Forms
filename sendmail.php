@@ -6,16 +6,16 @@ require 'phpmailer/src/Exception.php';
 require 'phpmailer/src/PHPMailer.php';
 
 $mail = new PHPMailer(true);
-$mail->Charset = 'UTF-8';
+$mail->CharSet = 'UTF-8';
 $mail->setLanguage('ru','phpmailer/language/');
 $mail->IsHTML(true);
 
 //От кого письмо
-$mail->setFrom('chalanamdo@gmail.com', 'MuraPro');
+$mail->setFrom('warlokc@inbox.ru', 'MuraPro');
 //кому отправить
-$mail->addAddress('warlokc@inbox.ru');
+$mail->addAddress('chalanamdo@gmail.com');
 //тема письма
-$mail->Subject = 'Текущий отчет о проделанных работах';
+$mail->Subject = 'Идинтификация передачи эл.писем';
 
 
 //Рука
