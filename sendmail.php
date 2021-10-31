@@ -54,7 +54,7 @@ if (!empty($_FILES['image']['tmp_name'])) {
 	//грузим файл
 	if (copy($_FILES['image']['tmp_name'], $filePath)){
 		$fileAttach = $filePath;
-		$body.='<p><strong>Фото в приложении</strong></p>';
+		$body.='<><strong>Фото в приложении</strong>';
 		$mail->addAttachment($fileAttach);
 	}
 }
